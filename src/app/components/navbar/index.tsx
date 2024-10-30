@@ -7,6 +7,7 @@ import UserMenu from "@/app/ui/userMenu";
 
 import useScrollVisibility from "@/hooks/useScrollVisibility";
 import useDevice from "@/hooks/useDevice";
+import Link from "next/link";
 
 function Navbar() {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -30,7 +31,7 @@ function Navbar() {
           />
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex flex-shrink-0 items-center font-bold">
-              {navLogoLabel}
+              <Link href="#hero">{navLogoLabel}</Link>
             </div>
             <div className="hidden sm:ml-6 sm:block">
               <NavLinks />

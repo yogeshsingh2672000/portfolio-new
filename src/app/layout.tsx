@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   authors: [
     { name: "Yogesh Kumar", url: "https://portfolio-new-one-iota.vercel.app/" },
   ],
-  robots: { index: false, follow: false },
+  robots: { index: true, follow: true },
   openGraph: {
     title: "Yogesh Kumar | Software Engineer & Developer",
     description:
